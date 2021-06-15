@@ -43,26 +43,6 @@ jobs:
       with:
         name: "Ted2's Mod Menu Template.nic.tar"
         path: "./Ted2's Mod Menu Template.nic.tar"
-        
-    - name: Create Release
-      id: create-release
-      uses: actions/create-release@latest
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ env.VERSION }}
-        release_name: Release ${{ env.VERSION }}
-        body: ""
-        draft: false
-        prerelease: false
+      
     
-    - name: Add Package to release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create-release.outputs.upload_url }}
-        asset_path: "./Ted2's Mod Menu Template.nic.tar"
-        asset_name: "Ted2-Mod-Menu-Template.nic.tar"
-        asset_content_type: application/x-tar
-          
+  
