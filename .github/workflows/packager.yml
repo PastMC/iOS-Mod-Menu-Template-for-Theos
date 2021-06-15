@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
       env:
         VERSION: ""
-    - name: Install Theos
+    - name: Install Theoss
       run: |
         sudo apt-get install fakeroot git perl clang-6.0 build-essential -y
         echo "export THEOS=~/theos" >> ~/.profile
