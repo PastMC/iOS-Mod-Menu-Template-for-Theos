@@ -8,7 +8,7 @@ void setup() {
   //See sample.xm for a example Tweak.xm
 
   //patching offsets directly, without switch
-  patchOffset(0x1002DB3C8, "0xC0035FD7");
+  patchOffset(0x1002DB3C8, "0xC0035FD6");
   patchOffset(0x10020D2D4, "0x00008052C0035FD6");
 
   // You can write as many bytes as you want to an offset
