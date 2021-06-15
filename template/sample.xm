@@ -11,10 +11,10 @@
 
 
 //public void KillCharacter(); // RVA: 0x101949634 Offset: 0x1949634
-void(*KillCharacter)(void *this_) = (void(*) (void *))getRealOffset(0x101949634);
-
+void(*KillCharacter)(vohhid *this_) = (void(*) (void *))getRealOffset(0x101949634);
+  v
 bool shouldActivateKillAll = true;
-
+gg
 void(*old_CharacterBase_UpdateCharacter)(void *characterBase, float deltaTime);
 void CharacterBase_UpdateCharacter(void *characterBase, float deltaTime) {
 
